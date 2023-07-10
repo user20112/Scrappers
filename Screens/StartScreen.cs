@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Extended.Input.InputListeners;
 using Myra.Graphics2D.UI;
 using Scrappers.Abstracts;
 
@@ -19,26 +20,43 @@ namespace Scrappers.Screens
             _desktop = new Desktop();
             _desktop.Root = _screen;
 
-            _desktop.KeyDown += (s, a) =>
-            {
-            };
-            // Inform Myra that external text input is available
-            // So it stops translating Keys to chars
-            _desktop.HasExternalTextInput = true;
-            // Provide that text input
-            //Window.TextInput += (s, a) =>
-            //{
-            //    _desktop.OnChar(a.Character);
-            //};
+            KeyboardListener listener = new KeyboardListener();
+            listener.KeyPressed += KeyPressed;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch toDrawto)
         {
             base.Draw(gameTime, toDrawto);
-            toDrawto.Begin(SpriteSortMode.FrontToBack, BlendState.NonPremultiplied);
-            toDrawto.Draw(_background, new Rectangle(0, 0, (int)Scrappers.Width, (int)Scrappers.Height), Color.White);
-            toDrawto.End();
+            //toDrawto.Begin(SpriteSortMode.FrontToBack, BlendState.NonPremultiplied);
+            //toDrawto.Draw(_background, new Rectangle(0, 0, (int)Scrappers.Width, (int)Scrappers.Height), Color.White);
+            //toDrawto.End();
             _desktop.Render();
+        }
+
+        private void KeyPressed(object sender, KeyboardEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Microsoft.Xna.Framework.Input.Keys.E:
+                    Scrappers.Instance.PopScreen();
+                    Scrappers.Instance.Close();
+                    break;
+
+                case Microsoft.Xna.Framework.Input.Keys.P:
+                    break;
+
+                case Microsoft.Xna.Framework.Input.Keys.O:
+                    break;
+
+                case Microsoft.Xna.Framework.Input.Keys.D:
+                    break;
+
+                case Microsoft.Xna.Framework.Input.Keys.H:
+                    break;
+
+                case Microsoft.Xna.Framework.Input.Keys.S:
+                    break;
+            }
         }
     }
 }

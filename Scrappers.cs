@@ -40,6 +40,12 @@ namespace Scrappers
             _nativeRenderingTarget = new RenderTarget2D(GraphicsDevice, 1920, 1080);
         }
 
+        public void Close()
+        {
+            MyraAnimationManager.Dispose();
+            Exit();
+        }
+
         public void PopScreen()
         {
             if (_screenStack.Count > 0)

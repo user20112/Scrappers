@@ -17,12 +17,12 @@ namespace Scrappers.Screens
             Padding = new Thickness(50);
             Label titleLabel = new Label
             {
-                Text = "Scrappers Boot  Utility",
+                Text = "Scrappers Boot Utility",
                 TextColor = ColorStorage.CreateColor(69, 224, 255, 255),
                 Padding = new Thickness(2),
                 GridColumnSpan = 0,
                 GridRow = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Massive)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
             };
 
             Label playLabel = new Label
@@ -33,7 +33,7 @@ namespace Scrappers.Screens
                 GridColumn = 1,
                 GridRow = 2,
                 GridColumnSpan = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             Label optionsLabel = new Label
@@ -44,7 +44,7 @@ namespace Scrappers.Screens
                 GridColumn = 1,
                 GridRow = 4,
                 GridColumnSpan = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             Label trainingLabel = new Label();
@@ -54,7 +54,7 @@ namespace Scrappers.Screens
             trainingLabel.GridColumn = 1;
             trainingLabel.GridRow = 5;
             trainingLabel.GridColumnSpan = 0;
-            trainingLabel.Font = FontManager.WhiteRabbit.GetFont(FontManager.Large);
+            trainingLabel.Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium);
 
             Label helpLabel = new Label
             {
@@ -64,7 +64,7 @@ namespace Scrappers.Screens
                 GridColumn = 1,
                 GridRow = 6,
                 GridColumnSpan = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             Label statsLabel = new Label
@@ -75,7 +75,7 @@ namespace Scrappers.Screens
                 GridColumn = 1,
                 GridRow = 7,
                 GridColumnSpan = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             Label exitLabel = new Label
@@ -86,25 +86,27 @@ namespace Scrappers.Screens
                 GridColumn = 1,
                 GridRow = 9,
                 GridColumnSpan = 0,
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             Label inputLabel = new Label
             {
                 Text = "Input Selection:",
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
             _blinkingLabel = new Label
             {
                 Text = "_",
-                Font = FontManager.WhiteRabbit.GetFont(FontManager.Large)
+                Font = FontManager.WhiteRabbit.GetFont(FontManager.Medium)
             };
 
-            var horizontalStackPanel1 = new HorizontalStackPanel();
-            horizontalStackPanel1.Padding = new Thickness(2);
-            horizontalStackPanel1.GridRow = 10;
-            horizontalStackPanel1.GridColumnSpan = 0;
+            HorizontalStackPanel horizontalStackPanel1 = new HorizontalStackPanel
+            {
+                Padding = new Thickness(2),
+                GridRow = 11,
+                GridColumnSpan = 0
+            };
             horizontalStackPanel1.Widgets.Add(inputLabel);
             horizontalStackPanel1.Widgets.Add(_blinkingLabel);
 
@@ -159,14 +161,19 @@ namespace Scrappers.Screens
             });
             RowsProportions.Add(new Proportion
             {
+                Type = Myra.Graphics2D.UI.ProportionType.Part,
+                Value = 1,
+            });
+            RowsProportions.Add(new Proportion
+            {
                 Type = Myra.Graphics2D.UI.ProportionType.Auto,
             });
             RowsProportions.Add(new Proportion
             {
                 Type = Myra.Graphics2D.UI.ProportionType.Part,
-                Value = 2,
+                Value = 3,
             });
-            Margin = new Thickness(50);
+            Margin = new Thickness(100);
             BorderThickness = new Thickness(1);
             Border = new SolidBrush("#15283BFF");
             Widgets.Add(titleLabel);
