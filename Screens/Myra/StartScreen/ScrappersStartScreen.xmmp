@@ -1,0 +1,33 @@
+<Project>  
+  <Grid Margin="50" BorderThickness="1" Border="#15283BFF" >
+    <Grid.ColumnsProportions>
+      <Proportion Type="Part" />
+      <Proportion Type="Part" Value="25" />
+    </Grid.ColumnsProportions>    
+<Grid.RowsProportions>
+      <Proportion/>
+      <Proportion Type="Part" />
+      <Proportion/>
+      <Proportion Type="Part" />
+      <Proportion/>
+      <Proportion/>
+      <Proportion/>
+      <Proportion/>
+      <Proportion Type="Part" />
+      <Proportion/>
+      <Proportion/>
+      <Proportion Type="Part" Value="2" />
+    </Grid.RowsProportions>    
+<Label Text="Scrappers Boot  Utility" TextColor="#45E0FFFF" Padding="2" GridColumnSpan="0" Scale="2, 2" />
+<Label Text="[P]lay Game" GridRow="2"  TextColor="#0FF86EFF"  Padding="2" GridColumn="1" GridColumnSpan="0" />
+<Label Text="[O]ptions"  GridRow="4"  TextColor="#0FF86EFF"  Padding="2" GridColumn="1" GridColumnSpan="0" />
+<Label Text="[D]rone Operator Training"   TextColor="#0FF86EFF" Padding="2" GridColumn="1"  GridRow="5" GridColumnSpan="0" />
+<Label Text="[H]elp Manual"  GridRow="6"  TextColor="#0FF86EFF" Padding="2" GridColumn="1"  GridColumnSpan="0" />
+<Label Text="[S]tats"  GridRow="7"  TextColor="#0FF86EFF"  Padding="2" GridColumn="1" GridColumnSpan="0" />
+<Label Text="[E]xit"  GridRow="9"  TextColor="#0FF86EFF"  Padding="2" GridColumn="1" GridColumnSpan="0" />    
+<HorizontalStackPanel GridRow="10" Padding="2" GridColumnSpan="0" >
+<Label Text="Input Selection:"  />
+<Label Text="_"  />
+    </HorizontalStackPanel>
+  </Grid>
+</Project>

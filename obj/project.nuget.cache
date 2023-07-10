@@ -1,11 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "sSPqIPes++w7PANB8xAg4kYcb26LCO0JjhFdtCAUuE1C9feJeGd39v3TSOT4Tp9Cqba/g6FCDGnEfNhiuJXnaw==",
+  "dgSpecHash": "V0zv+Ebs1V3tmK0S/gTFaAOyZrD3M5iqxWW8KFCBTwgKdialCwmKxKLBRCHRx0LheAD9G77VaIRuyvdijYtzYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\devli\\OneDrive\\Documents\\Scrappers\\Scrappers.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\devli\\.nuget\\packages\\cyotek.drawing.bitmapfont\\2.0.4\\cyotek.drawing.bitmapfont.2.0.4.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\fontstashsharp.base\\1.1.8\\fontstashsharp.base.1.1.8.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\fontstashsharp.monogame\\1.2.8\\fontstashsharp.monogame.1.2.8.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\fontstashsharp.rasterizers.stbtruetypesharp\\1.1.8\\fontstashsharp.rasterizers.stbtruetypesharp.1.1.8.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\info.lundin.math.dll\\1.2.6\\info.lundin.math.dll.1.2.6.nupkg.sha512",
     "C:\\Users\\devli\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\devli\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\devli\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\monogame.extended.collisions\\3.8.0\\monogame.extended.collisions.3.8.0.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\monogame.extended.particles\\3.8.0\\monogame.extended.particles.3.8.0.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\myra\\1.4.5\\myra.1.4.5.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\stbimagesharp\\2.27.13\\stbimagesharp.2.27.13.nupkg.sha512",
+    "C:\\Users\\devli\\.nuget\\packages\\stbtruetypesharp\\1.26.11\\stbtruetypesharp.1.26.11.nupkg.sha512"
   ],
   "logs": []
 }
