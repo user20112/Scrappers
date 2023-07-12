@@ -10,6 +10,7 @@ namespace Scrappers.Screens
     {
         private Texture2D _background;
         private Desktop _desktop;
+        private KeyboardListener _listener;
         private Myra_StartScreen _screen;
 
         public StartScreen()
@@ -20,8 +21,8 @@ namespace Scrappers.Screens
             _desktop = new Desktop();
             _desktop.Root = _screen;
 
-            KeyboardListener listener = new KeyboardListener();
-            listener.KeyPressed += KeyPressed;
+            _listener = new KeyboardListener();
+            _listener.KeyPressed += KeyPressed;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch toDrawto)
@@ -31,6 +32,12 @@ namespace Scrappers.Screens
             //toDrawto.Draw(_background, new Rectangle(0, 0, (int)Scrappers.Width, (int)Scrappers.Height), Color.White);
             //toDrawto.End();
             _desktop.Render();
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            base.Update(gameTime);
+            _listener.Update(gameTime);
         }
 
         private void KeyPressed(object sender, KeyboardEventArgs e)
